@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/7fbd7a27-eee1-42f1-b0c2-83787e04d526
+Live Demo: https://interv-ai-y2ce.onrender.com
 
 ## Run Locally
 
