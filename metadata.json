@@ -1,0 +1,6 @@
+{
+  "name": "IntervAI",
+  "description": "The ultimate AI-driven platform for technical, MCQ, and coding interviews. Practice smarter with deep feedback and live coding challenges.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

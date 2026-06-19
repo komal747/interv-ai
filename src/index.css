@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg: #09090b;
+  --color-card: #18181b;
+  --color-border: #27272a;
+  --color-accent: #3b82f6;
+  --color-text-main: #fafafa;
+  --color-text-muted: #a1a1aa;
+  --color-success: #22c55e;
+  
+  --radius-bento: 20px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main font-sans antialiased;
+  }
+}
+
+.bento-card {
+  @apply bg-card border border-border rounded-bento p-8 flex flex-col transition-all duration-200;
+}
+
+.bento-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.gradient-accent {
+  @apply bg-gradient-to-br from-accent to-blue-700;
+}
+
+.metric-title {
+  @apply text-[10px] uppercase tracking-widest text-text-muted font-bold mb-2;
+}
+
+.metric-value {
+  @apply text-2xl font-semibold text-text-main;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full;
+}
